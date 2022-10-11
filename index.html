@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hai cantik</title>
+  <link rel="stylesheet" href=".../../user/halaman1.css">
+</head>
+  <body>
+    <br><h1>Hai Cantik!</h1>
+    <br>
+    <h2>kamu apa kabar sekarang?</h2>
+    <br>
+    <img class= "hehe" src="https://c.tenor.com/Z8ezUHZzcLoAAAAC/love.gif" />
+    <h1>Kamu mau nggak kamu jadi pacarku?</h1>
+    <button id="btn_mau" onclick="alert('I LOVE YOU')" >Mau</button>&nbsp;
+    <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+      Gamau
+    </button>
+  </body>
+  <script>
+    function gamau(id) {
+      var mau = document.getElementById("btn_mau");
+      var i = Math.floor(Math.random() * 300) + 1;
+      var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+      id.style.left = i + "px";
+      id.style.top = j + "px";
+    }
+  </script>
+</html>
